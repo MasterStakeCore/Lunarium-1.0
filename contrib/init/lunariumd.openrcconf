@@ -1,0 +1,26 @@
+# /etc/conf.d/lunariumd: config file for /etc/init.d/lunariumd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/lunarium/lunarium.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/lunariumd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/lunariumd.pid"
+
+# Where to write lunariumd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/lunariumd"
+
+# User and group to own lunariumd process
+#BITCOIND_USER="lunarium"
+#BITCOIND_GROUP="lunarium"
+
+# Path to lunariumd executable
+#BITCOIND_BIN="/usr/bin/lunariumd"
+
+# Nice value to run lunariumd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

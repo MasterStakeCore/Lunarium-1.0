@@ -1,0 +1,11 @@
+[Protocol]
+exec=lunarium-qt '%u'
+protocol=lunarium
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false
