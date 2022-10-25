@@ -108,14 +108,14 @@ public:
         /**
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
-         * a large 4-byte int at any alignment.
+         * a large 4-byte int at any alignment. 
          */
         pchMessageStart[0] = 0xC1;
         pchMessageStart[1] = 0x6c;
         pchMessageStart[2] = 0x5f;
         pchMessageStart[3] = 0x64;
         vAlertPubKey = ParseHex("04c826c3c83aed95452e301313d0b42409f0a79d464a0f26ecf8cf9258e33ee93b9c5b547a84739f0d06cad405aa94044bdb55922969709935b3e4582f10b8a6ab");
-        nDefaultPort = 42524;
+        nDefaultPort = 42524; 
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Lunarium starting difficulty is 1 / 2^12
         nMaxReorganizationDepth = 100;
         nMinerThreads = 0;
@@ -124,7 +124,6 @@ public:
         nMaxMoneyOut = 1000000000 * COIN;
 
         nSubsidyHalvingBlock = 1000;
-        nMasternodeCollateral = 100000;
         strDevFeeAddress = "Le8UrPvpAtWCYPiTQw8emHTtba8LPyFJgR";
 
         /** Height or Time Based Activations **/
@@ -134,16 +133,6 @@ public:
         nZerocoinStartTime = 1547096400; // Genesis time
         nBlockZerocoinV2 = 20;
 
-        /**
-         * Build the genesis block. Note that the output of the genesis coinbase cannot
-         * be spent as it did not originally exist in the database.
-         *
-         * CBlock(hash=00000ffd590b14, ver=1, hashPrevBlock=00000000000000, hashMerkleRoot=e0028e, nTime=1390095618, nBits=1e0ffff0, nNonce=28917698, vtx=1)
-         *   CTransaction(hash=e0028e, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-         *     CTxIn(COutPoint(000000, -1), coinbase 04ffff001d01044c5957697265642030392f4a616e2f3230313420546865204772616e64204578706572696d656e7420476f6573204c6976653a204f76657273746f636b2e636f6d204973204e6f7720416363657074696e6720426974636f696e73)
-         *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
-         *   vMerkleTree: e0028e
-         */
         const char* pszTimestamp = "New Lunarium Genesis Block mined by Team in 06/2022";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
@@ -173,9 +162,9 @@ public:
         vSeeds.push_back(CDNSSeedData("seed3.lunariumcoin.com", "seed3.lunariumcoin.com"));
         vSeeds.push_back(CDNSSeedData("seed4.lunariumcoin.com", "seed4.lunariumcoin.com"));
         vSeeds.push_back(CDNSSeedData("seed5.lunariumcoin.com", "seed5.lunariumcoin.com"));
-        vSeeds.push_back(CDNSSeedData("186.202.57.186", "186.202.57.186"));
-        vSeeds.push_back(CDNSSeedData("191.252.109.144", "191.252.109.144"));
-        vSeeds.push_back(CDNSSeedData("191.252.204.129", "191.252.204.129"));
+        vSeeds.push_back(CDNSSeedData("seed6.lunariumcoin.com", "seed6.lunariumcoin.com"));
+        vSeeds.push_back(CDNSSeedData("seed7.lunariumcoin.com", "seed7.lunariumcoin.com"));
+        vSeeds.push_back(CDNSSeedData("seed8.lunariumcoin.com", "seed8.lunariumcoin.com"));
          
 
         // Lunarium addresses start with 'L'
@@ -184,6 +173,7 @@ public:
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 25);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0xB2)(0x47)(0x46).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0xB2)(0x43)(0x08).convert_to_container<std::vector<unsigned char> >();
+                //BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x02)(0x62).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
@@ -254,7 +244,7 @@ public:
         nBlockZerocoinV2 = 15;
 
         nSubsidyHalvingBlock = 1000;
-        nMasternodeCollateral = 100000;
+        
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1656485290;

@@ -18,7 +18,7 @@
 #define CLIENT_VERSION_MAJOR 1
 
 /* Minor version */
-#define CLIENT_VERSION_MINOR 0
+#define CLIENT_VERSION_MINOR 1
 
 /* Build revision */
 #define CLIENT_VERSION_REVISION 0
@@ -33,7 +33,7 @@
 #define ENABLE_ZMQ 1
 
 /* parameter and return value type for __fdelt_chk */
-/* #undef FDELT_TYPE */
+#define FDELT_TYPE long int
 
 /* define if the Boost library is available */
 #define HAVE_BOOST /**/
@@ -54,7 +54,7 @@
 #define HAVE_BOOST_THREAD /**/
 
 /* define if the Boost::Unit_Test_Framework library is available */
-#define HAVE_BOOST_UNIT_TEST_FRAMEWORK /**/
+/* #undef HAVE_BOOST_UNIT_TEST_FRAMEWORK */
 
 /* Define this symbol if the consensus lib has been built */
 /* #undef HAVE_CONSENSUS_LIB */
@@ -173,7 +173,7 @@
 /* #undef HAVE_LIBRPCRT4 */
 
 /* Define to 1 if you have the `rt' library (-lrt). */
-/* #undef HAVE_LIBRT */
+#define HAVE_LIBRT 1
 
 /* Define to 1 if you have the `shell32' library (-lshell32). */
 /* #undef HAVE_LIBSHELL32 */
@@ -290,7 +290,7 @@
 #define PACKAGE_NAME "Lunarium"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Lunarium 1.0.0"
+#define PACKAGE_STRING "Lunarium 1.1.0"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "lunarium"
@@ -299,7 +299,7 @@
 #define PACKAGE_URL ""
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "1.0.0"
+#define PACKAGE_VERSION "1.1.0"
 
 /* Define to necessary symbol if this constant uses a non-standard name on
    your system. */

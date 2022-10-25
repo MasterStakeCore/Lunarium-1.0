@@ -3,7 +3,7 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-BUILDDIR="/home/carlin2008/xln"
+BUILDDIR="/home/carlin2008/xln1.1"
 EXEEXT=""
 
 # These will turn into comments if they were disabled when configuring.

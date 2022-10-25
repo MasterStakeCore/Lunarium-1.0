@@ -1,8 +1,8 @@
 ---
-name: "lunarium-aarch64-2.0.2"
+name: "lunarium-aarch64-1.1.0"
 enable_cache: true
 suites:
-- "trusty"
+- "xenial"
 architectures:
 - "amd64"
 packages:
@@ -25,7 +25,7 @@ packages:
 - "python"
 reference_datetime: "2019-01-30 05:00:00"
 remotes:
-- "url": "https://github.com/lunarium-coin/lunarium-2.0.git"
+- "url": "https://github.com/lunarium-coin/lunarium-1.1.git"
   "dir": "lunarium"
 files: []
 script: |
