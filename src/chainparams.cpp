@@ -165,6 +165,10 @@ public:
         vSeeds.push_back(CDNSSeedData("seed6.lunariumcoin.com", "seed6.lunariumcoin.com"));
         vSeeds.push_back(CDNSSeedData("seed7.lunariumcoin.com", "seed7.lunariumcoin.com"));
         vSeeds.push_back(CDNSSeedData("seed8.lunariumcoin.com", "seed8.lunariumcoin.com"));
+        vSeeds.push_back(CDNSSeedData("45.94.209.55", "45.94.209.55"));
+        vSeeds.push_back(CDNSSeedData("84.54.23.196", "84.54.23.196"));
+        vSeeds.push_back(CDNSSeedData("164.68.123.250", "164.68.123.250"));
+        vSeeds.push_back(CDNSSeedData("167.86.80.59", "167.86.80.59"));
          
 
         // Lunarium addresses start with 'L'
