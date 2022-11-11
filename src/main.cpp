@@ -5422,16 +5422,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             SeenLocal(addrMe);
         }
 
-        if (pfrom->cleanSubVer == "/Lunarium:2.0.0/" || pfrom->cleanSubVer == "/Lunarium:2.0.1/")
-        {
-            version_old = "< 2.0.2.1";
-            // disconnect from peers older than this version
-            LogPrintf("peer=%d using obsolete version %s disconnecting\n", pfrom->id, pfrom->cleanSubVer);
-            pfrom->PushMessage("reject", strCommand, REJECT_OBSOLETE, strprintf("Version must be %s or greater", version_old));
-            pfrom->fDisconnect = true;
-            return false;
-        }
-
         // Be shy and don't send version until we hear
         if (pfrom->fInbound)
             pfrom->PushVersion();
