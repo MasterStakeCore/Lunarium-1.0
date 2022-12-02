@@ -13,23 +13,21 @@
   * TX maturity: 60 blocks
   * Masternode Confirmation: 25 blocks
   * Algorithm: Quark
-  * Colateral: 100.000 Coins
-  * Block Reward: 4 ~ 25 Coins
-  * Colateral Masternode: 100.000
-  * Reward Masternode: 80%
-  * Reward POS - 20%
+  * Block Reward: 4 ~ 80 Coins
+  * Colateral Masternode: 100.000 ~ 200.000 XLN
+  * Reward Masternode: 80% ~ 90%
+  * Reward POS - 10% ~20%
   * Reward Dev Fee: 1 Coin
   * RPCPort: 42523
   * P2PPort: 42524
   * Blocks Rewards
   * 1 - 21.600 - 4 Coins
-  * 21.601 - 525.600 - 25 Coins
-  * 525.601 - 1.051.200 - 20 Coins
-  * 1.051.201 - 1.576.800 - 15 Coins
-  * 1.576.801 - 2.102.400 - 10 Coins
-  * 2.102.401 - 2.628.000 - 5 Coins
-  * 2.628.001 - 3.153.600 - 4 Coins
-  * 3.153.601 up to 1.000.000.000 Billion Coins - 4 Coins
+  * 21.601 - 236.000 - 25 Coins
+  * 236.001 - 498800 - 50 Coins
+  * 498801 - 761600 - 60 Coins
+  * 761601 - 1024400 - 70 Coins
+  * 1024401 - Infinite - 80 Coins
+  
 -------
 -------
 
